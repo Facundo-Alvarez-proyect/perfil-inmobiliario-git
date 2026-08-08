@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartera</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="headerIndex">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+            <div class="container-fluid">
+                <!-- Brand -->
+                <div class="navbar-brand">
+                    <h1 class="h1-colores">Facundo Alvarez Amado</h1>
+                    <p class="descripcion-inicio">Asesor inmobiliario</p>
+                </div>
+
+                <!-- Boton hamburguesa -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal">
+
+                    <span class="navbar-toggler-icon"></span>
+
+                </button>
+
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Cartera</a></li>
+                        <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="sobremi.html">Sobre mi</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contactos</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <main class="main-cartera">
+
+        <div id="carousel1" class="carousel slide carrusel-cartera">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../img/prop.png" class="d-block w-100 carrusel-size" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/departamentos.JPG" class="d-block w-100 carrusel-size" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/lotes.JPG" class="d-block w-100 carrusel-size" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel1" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <section class="casas-departamentos">
+            <article>
+
+                <h2 class="casas-proyecto">Casas</h2>
+                <ul class="listaCasas">
+                    <li><a href="https://century21.com.ar/propiedad/316583_casa-en-venta-en-la-plata-5-dormitorios/asesor_7833-facundo-alvarez-amado_local"
+                            target="_blank">119 entre 37 y 38</a></li>
+                    <li><a href="https://century21.com.ar/propiedad/302829_casa-en-venta-en-la-plata-con-4-dormitorios/asesor_7833-facundo-alvarez-amado_local"
+                            target="_blank">18 entre 43 y 44</a></li>
+                    <li><a href="https://century21.com.ar/propiedad/297462_casa-en-venta-en-la-plata-zona-parque-san-martin/asesor_7833-facundo-alvarez-amado_local"
+                            target="_blank">50 entre 27 y 28</a></li>
+                </ul>
+            </article>
+            <article>
+                <h2 class="deptos-proyecto">Departamentos</h2>
+                <ul class="listaDeptos">
+                    <li><a href="https://century21.com.ar/propiedad/303611_departamento-en-venta-en-la-plata-tipo-monoambiente/asesor_7833-facundo-alvarez-amado_local"
+                            target="_blank">5 entre 41 y 42 tipo monoambiente</a></li>
+                    <li><a href="https://century21.com.ar/propiedad/307340_departamento-en-venta-la-plata/asesor_7833-facundo-alvarez-amado_local"
+                            target="_blank">50 entre 13 y 14</a></li>
+                    <li><a href="https://century21.com.ar/propiedad/346814_departamento-en-alquiler-en-la-plata/asesor_7833-facundo-alvarez-amado_local"
+                            target="_blank">39 entre 142 y 143, en alquiler</a></li>
+                </ul>
+            </article>
+        </section>
+
+        <div class="grafico-general">
+            <figure class="contenedor-graficoComportamiento">
+                <img class="imgComportamiento" src="../img/grafico.png" alt="Grafico demostrativo de comportamiento">
+                <figcaption class="textoComportamiento">Asi se comporta tu propiedad segun su valor en el mercado
+                </figcaption>
+            </figure>
+        </div>
+    </main>
+
+    <footer>
+        <section class="footer-proyecto">
+            <div>
+                <p class="cabecera-footer">Redes sociales</p>
+                <ul class="coloresTextoFooter">
+                    <li><a class="redesFooter"
+                            href="https://www.instagram.com/facualvarez.c21?igsh=aHVkd2ttbXQzbmE1&utm_source=qr"
+                            target="_blank">Instagram</a></li>
+                    <li><a class="redesFooter" href="">Facebook</a></li>
+                    <li><a class="redesFooter" href="http://wa.me/2213567054" target="_blank">Whatsapp</a></li>
+                </ul>
+            </div>
+            <div>
+                <p class="coloresTextoFooter">Copyright Facundo Alvarez Amado 2026</p>
+                <p class="coloresTextoFooter">Camino Parque centenario 3928</p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3273.259924187573!2d-58.024101900000005!3d-34.8748188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2dde72bb45831%3A0x5a5edf50d37faab9!2sCentury%2021%20Errico%26Ostrofsky!5e0!3m2!1ses!2sar!4v1781789340213!5m2!1ses!2sar"
+                    width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -139,6 +139,7 @@ main {
 .main-cartera {
     display: grid;
     gap: 1rem;
+    padding: 20px;
     grid-template-columns: 1fr;
     grid-template-areas: "carrusel-cartera"
     "casas-departamentos"

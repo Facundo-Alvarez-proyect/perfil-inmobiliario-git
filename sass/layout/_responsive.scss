@@ -10,6 +10,10 @@
     .main-cartera {
         gap: 1.2rem;
     }
+
+    .general-sobreMi {
+        gap: 1.2rem;
+    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -33,5 +37,18 @@
         grid-template-areas:
             "carrusel-cartera carrusel-cartera"
             "casas-departamentos grafico-general";
+    }
+
+    .general-sobreMi {
+        grid-template-columns: 2fr 2fr;
+        grid-template-areas: 
+            "contenedor-sobreMi contenedor-sobreMi"
+            "imagen-sobreMi mis-valores";
+    }
+
+    .redes-asesor {
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 100px;
     }
 }

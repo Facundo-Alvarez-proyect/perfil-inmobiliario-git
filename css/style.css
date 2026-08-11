@@ -180,6 +180,10 @@ main {
   width: 100%;
   height: 250px;
   object-fit: contain;
+  transition: transform 0.3s ease;
+}
+.carrusel-size:hover {
+  transform: scale(1.02);
 }
 
 .textoImagen-cartera {
@@ -309,7 +313,19 @@ main {
   padding: 30px;
 }
 
+.descripcion-sobremi, .sobremi-main {
+  text-align: center;
+}
+
+.general-sobreMi {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+  grid-template-areas: "contenedor-sobreMi" "imagen-sobreMi" "mis-valores";
+}
+
 .contenedor-sobreMi {
+  grid-area: contenedor-sobreMi;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -317,7 +333,6 @@ main {
 }
 
 .sobremi-main {
-  text-align: center;
   font-size: 25px;
   font-weight: bold;
   padding: 5px;
@@ -325,21 +340,26 @@ main {
 
 .descripcion-sobremi {
   font-size: 15px;
-  text-align: center;
 }
 
-.imagen-sobremi {
+.imagen-sobreMi {
+  grid-area: imagen-sobreMi;
   display: flex;
   flex-direction: column;
-  width: 50%;
-  margin: 0 auto;
-  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
   text-align: center;
   padding: 20px;
+  width: 100%;
 }
 
 .ilustrativa-sobremi {
   width: 300px;
+  max-width: 100%;
+  transition: transform 0.3s ease;
+}
+.ilustrativa-sobremi:hover {
+  transform: scale(1.05);
 }
 
 .texto-sobreMi {
@@ -347,9 +367,10 @@ main {
 }
 
 .mis-valores {
+  grid-area: mis-valores;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   padding: 20px;
 }
 
@@ -381,9 +402,10 @@ main {
 
 .redes-asesor {
   display: flex;
-  justify-content: space-between;
-  margin: 50px;
-  padding: 100px 250px;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 30px;
 }
 
 @media screen and (min-width: 768px) {
@@ -394,6 +416,9 @@ main {
     gap: 1.2rem;
   }
   .main-cartera {
+    gap: 1.2rem;
+  }
+  .general-sobreMi {
     gap: 1.2rem;
   }
 }
@@ -410,6 +435,15 @@ main {
   .main-cartera {
     grid-template-columns: 2fr 1fr;
     grid-template-areas: "carrusel-cartera carrusel-cartera" "casas-departamentos grafico-general";
+  }
+  .general-sobreMi {
+    grid-template-columns: 2fr 2fr;
+    grid-template-areas: "contenedor-sobreMi contenedor-sobreMi" "imagen-sobreMi mis-valores";
+  }
+  .redes-asesor {
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 100px;
   }
 }
 

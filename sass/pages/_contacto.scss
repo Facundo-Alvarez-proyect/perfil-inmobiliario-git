@@ -13,7 +13,8 @@
 
 .redes-asesor {
     display: flex;
-    justify-content: space-between;
-    margin: 50px;
-    padding: 100px 250px;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 30px;
 }

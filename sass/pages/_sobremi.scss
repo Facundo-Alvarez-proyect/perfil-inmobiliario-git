@@ -1,4 +1,22 @@
+@use "../utilities/mixins" as *;
+
+%texto-centrado {
+    text-align: center;
+}
+
+.general-sobreMi {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "contenedor-sobreMi"
+    "imagen-sobreMi"
+    "mis-valores";
+}
+
+
 .contenedor-sobreMi {
+    grid-area: contenedor-sobreMi;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -6,29 +24,36 @@
 }
 
 .sobremi-main {
-    text-align: center;
+    @extend %texto-centrado;
     font-size: 25px;
     font-weight: bold;
     padding: 5px;
 }
 
 .descripcion-sobremi {
+    @extend %texto-centrado;
     font-size: 15px;
-    text-align: center;
 }
 
-.imagen-sobremi {
+.imagen-sobreMi {
+    grid-area: imagen-sobreMi;
     display: flex;
     flex-direction: column;
-    width: 50%;
-    margin: 0 auto;
-    justify-content: center;
+    align-items: center;
+    justify-content: flex-start;
     text-align: center;
     padding: 20px;
+    width: 100%;
 }
 
 .ilustrativa-sobremi {
     width: 300px;
+    max-width: 100%;
+    transition: transform 0.3s ease;
+
+    &:hover {
+        transform: scale(1.05);
+    }
 }
 
 .texto-sobreMi {
@@ -36,15 +61,15 @@
 }
 
 .mis-valores {
+    grid-area: mis-valores;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     padding: 20px;
 }
 
 .titulo-valores {
-    font-size: 20px;
-    font-weight: bold;
+    @include texto(20px, bold);
     margin: 0 auto;
 }
 

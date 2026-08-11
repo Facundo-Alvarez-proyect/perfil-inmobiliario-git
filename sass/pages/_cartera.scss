@@ -1,0 +1,81 @@
+.main-cartera {
+    display: grid;
+    gap: 1rem;
+    padding: 20px;
+    grid-template-columns: 1fr;
+    grid-template-areas: "carrusel-cartera"
+    "casas-departamentos"
+    "grafico-general";
+}
+
+.carrusel-cartera {
+    grid-area: carrusel-cartera;
+    padding: 20px;
+}
+
+.casas-departamentos {
+    grid-area: casas-departamentos;
+    padding: 20px;
+}
+
+.grafico-general {
+    grid-area: grafico-general;
+    padding: 20px;
+}
+
+.carrusel-size {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+}
+
+
+.textoImagen-cartera {
+    font-size: small;
+}
+
+.casas-departamentos {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 20px;
+}
+
+.casas-proyecto {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.listaCasas {
+    font-size: 15px;
+}
+
+.deptos-proyecto {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.listaDeptos {
+    font-size: 15px;
+}
+
+.grafico-general {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.contenedor-graficoComportamiento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imgComportamiento {
+    width: 200px;
+}
+
+.textoComportamiento {
+    font-size: small;
+}

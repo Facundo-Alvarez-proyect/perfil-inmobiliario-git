@@ -1,0 +1,79 @@
+.main-servicios {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        "titulo-servicios"
+        "contenedor-servicios"
+        "logo-servicios";
+}
+
+.titulo-servicios {
+    grid-area: titulo-servicios;
+}
+
+.contenedor-servicios {
+    grid-area: contenedor-servicios;
+}
+
+.logo-servicios {
+    grid-area: logo-servicios;
+}
+
+.titulo-servicios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.cabecera-servicios {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.p-cabecera {
+    font-size: 15px;
+}
+
+.contenedor-servicios {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.tituloLista-servicios {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.vendedores-compradores {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    gap: 20px;
+}
+
+.vendedores-proyecto {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.compradores-proyecto {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.tareas-asesor {
+    font-size: 15px;
+    list-style: none;
+    text-align: start;
+}
+
+.logo-servicios {
+    width: fit-content;
+    margin: 0px auto;
+    text-align: center;
+    padding: 30px;
+}

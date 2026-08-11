@@ -1,0 +1,23 @@
+@use "../utilities/variables" as *;
+
+.footer-proyecto {
+  background-color: $bg-header-footer;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.cabecera-footer {
+  color: $colorTexto-header-footer;
+  font-weight: bold;
+  font-size: large;
+}
+
+.redesFooter {
+    &:visited {
+        color: $colorTexto-header-footer;
+    }
+}
+.coloresTextoFooter {
+  color: $colorTexto-header-footer;
+}

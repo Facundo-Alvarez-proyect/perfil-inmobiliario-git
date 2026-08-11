@@ -1,0 +1,18 @@
+@use "utilities/variables";
+
+@use "base/base";
+@use "base/tipografia";
+
+@use "layout/header";
+@use "layout/nav";
+@use "layout/footer";
+
+@use "components/cards";
+
+@use "pages/index";
+@use "pages/cartera";
+@use "pages/servicios";
+@use "pages/sobremi";
+@use "pages/contacto";
+
+@use "layout/responsive";

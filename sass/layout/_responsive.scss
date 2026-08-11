@@ -1,0 +1,37 @@
+@media screen and (min-width: 768px) {
+    .mainIndex-proyecto {
+        gap: 1.2rem;
+    }
+
+    .main-servicios {
+        gap: 1.2rem;
+    }
+
+    .main-cartera {
+        gap: 1.2rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .mainIndex-proyecto {
+        gap: 1rem;
+        grid-template-columns: 2fr 2fr;
+        grid-template-areas:
+            "cabecera-index cabecera-index"
+            "listaServicios-index contenedorImagen-inicio";
+    }
+
+    .main-servicios {
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas:
+            "titulo-servicios titulo-servicios"
+            "contenedor-servicios logo-servicios";
+    }
+
+    .main-cartera {
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas:
+            "carrusel-cartera carrusel-cartera"
+            "casas-departamentos grafico-general";
+    }
+}

@@ -1,0 +1,40 @@
+.mainIndex-proyecto {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "cabecera-index"
+    "listaServicios-index"
+    "contenedorImagen-inicio";
+}
+
+.cabecera-index {
+  grid-area: cabecera-index;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.listaServicios-index {
+  grid-area: listaServicios-index;
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.contenedorImagen-inicio {
+  grid-area: contenedorImagen-inicio;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.imagen-inicio-proyecto {
+  width: fit-content;
+  margin: 10px;
+}
+
+.textoImg-inicio {
+  text-align: center;
+  font-size: small;
+}

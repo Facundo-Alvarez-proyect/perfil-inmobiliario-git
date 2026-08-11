@@ -1,0 +1,56 @@
+.contenedor-sobreMi {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+}
+
+.sobremi-main {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.descripcion-sobremi {
+    font-size: 15px;
+    text-align: center;
+}
+
+.imagen-sobremi {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.ilustrativa-sobremi {
+    width: 300px;
+}
+
+.texto-sobreMi {
+    font-size: small;
+}
+
+.mis-valores {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+.titulo-valores {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 auto;
+}
+
+.lista-sobremi {
+    font-size: 15px;
+    width: fit-content;
+    margin: 0 auto;
+    text-align: start;
+}

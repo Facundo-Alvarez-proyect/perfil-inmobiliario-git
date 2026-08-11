@@ -1,0 +1,27 @@
+@use "../utilities/variables" as *;
+
+.descripcion-inicio {
+    color: $colorTexto-header-footer;
+    margin: 0;
+    font-size: 20px;
+}
+
+.h1-colores {
+    color: $colorTexto-header-footer;
+    margin: 0;
+    font-size: $tamaño-tituloPrincipal;
+    font-weight: bold;
+}
+
+.h2-asesor {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0;
+    text-align: center;
+}
+
+.descripcion-asesor {
+    font-size: 15px;
+    margin: 0;
+    text-align: center;
+}

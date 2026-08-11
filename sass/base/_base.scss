@@ -1,0 +1,13 @@
+@use "../utilities/variables" as *;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  font-family: $fuentePrincipal;
+  background-color: $bg-main;
+  justify-content: center;
+  padding: 60px;
+}

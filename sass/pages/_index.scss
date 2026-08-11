@@ -1,0 +1,82 @@
+@use "../utilities/mixins" as *;
+
+.mainIndex-proyecto {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        "cabecera-index"
+        "listaServicios-index"
+        "contenedorImagen-inicio";
+}
+
+
+
+.cabecera-index {
+    grid-area: cabecera-index;
+    @include flex-center;
+    padding: 20px;
+}
+.listaServicios-index {
+    grid-area: listaServicios-index;
+    padding: 20px;
+}
+
+.contenedorImagen-inicio {
+    grid-area: contenedorImagen-inicio;
+    padding: 20px;
+}
+
+
+.h2-asesor { 
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0;
+    text-align: center;
+}
+
+.descripcion-asesor {
+    font-size: 15px;
+    margin: 0;
+    text-align: center;
+}
+
+.listaServicios-index {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+    
+.servicios-asesor {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.lista-asesor {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    font-size: 15px;
+    font-weight: normal;
+    width: fit-content;
+    margin: 0 auto;
+    list-style: none;
+    text-align: center;
+}
+
+.contenedorImagen-inicio {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.imagen-inicio-proyecto {
+    width: fit-content;
+    margin: 10px;
+}
+
+.textoImg-inicio {
+    text-align: center;
+    font-size: small;
+}

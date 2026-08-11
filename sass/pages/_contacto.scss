@@ -1,0 +1,19 @@
+.contacto-asesor {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.titulo-contacto {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 0 0 0;
+}
+
+.redes-asesor {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px;
+    padding: 100px 250px;
+}

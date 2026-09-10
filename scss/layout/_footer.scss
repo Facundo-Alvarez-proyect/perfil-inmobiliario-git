@@ -3,14 +3,14 @@
 .footer-proyecto {
   background-color: $bg-header-footer;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   padding: 10px;
+  font-size: 15px;
 }
 
 .cabecera-footer {
   color: $colorTexto-header-footer;
   font-weight: bold;
-  font-size: large;
 }
 
 .redesFooter {

@@ -9,12 +9,12 @@
 .h1-colores {
     color: $colorTexto-header-footer;
     margin: 0;
-    font-size: $tamaño-tituloPrincipal;
+    font-size: $tamaño-tituloPrincipal-mobile;
     font-weight: bold;
 }
 
 .h2-asesor {
-    font-size: 30px;
+    font-size: $tamaño-tituloPrincipal-mobile;
     font-weight: bold;
     margin: 0;
     text-align: center;

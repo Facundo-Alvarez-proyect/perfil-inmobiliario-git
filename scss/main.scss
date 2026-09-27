@@ -8,6 +8,7 @@
 @use "layout/footer";
 
 @use "components/cards";
+@use "components/buttons";
 
 @use "pages/index";
 @use "pages/cartera";
@@ -15,4 +16,4 @@
 @use "pages/sobremi";
 @use "pages/contacto";
 
-@use "layout/responsive";
+@use "layout/responsive";  
